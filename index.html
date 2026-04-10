@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI in Computer Vision | The Modern Editorial</title>
+    <meta name="description"
+        content="A simple, vintage-style guide to how Generative AI helps computers see and create images. ELI5 version.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main class="framed-container">
+            <header class="magazine-header">
+                <div class="nav-wrapper">
+                    <ul class="nav-links">
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Science</a></li>
+                    </ul>
+                    <div class="logo">The Editorial</div>
+                    <ul class="nav-links">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Trends</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="tags">
+                    <span class="tag">ELI5</span>
+                    <span class="tag">Generative AI</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+                <h1 class="title">Generative AI in Computer Vision </h1>
+                <p class="subtitle">Understand Generative AI in Computer Vision in a simple, intuitive, and visual way.
+                </p>
+                <div class="metadata">
+                    By Assia BENDAOU • 8 min read • Beginner-friendly • April 2026
+                </div>
+
+            </section>
+
+
+
+            <article class="article-body">
+
+                <h2>1. Computer Vision</h2>
+                <p>
+                    Imagine you had a machine. At first, this machine could only look at things you showed it. If you
+                    showed it a cat, it would say: "That is a cat."
+                    This is what we call Computer Vision the ability of machines to understand images.
+                </p>
+
+                <h3>How Computers see</h3>
+                <p>
+                    A computer does not see like humans. Instead, it sees an image as a grid of numbers called pixels.
+                    It does not recognize objects directly. Instead, it searches for patterns such as edges, shapes, and
+                    textures.
+                </p>
+                <div class="image-container">
+                    <img src="vision_puzzle.png" alt="A computer seeing an image as a pixel grid" id="vision-image">
+                    <p class="image-caption">Fig 1.0: A computer seeing an image as a pixel grid or puzzle of numbers.
+                    </p>
+                </div>
+                <p>
+                    For example, to recognize a cat, it may detect ears, whiskers, and body shape. Once enough patterns
+                    match, it concludes that the image contains a cat.
+                </p>
+
+                <h2>2. Gen AI in Computer Vision</h2>
+                <p>
+                    Recently, machines learned something new. Instead of only recognizing images, they can now create
+                    them. This is called Generative AI. It is a type of artificial intelligence that creates new data
+                    instead of only analyzing existing data.
+                </p>
+                <p>
+                    It can generate new images, write text, produce voice, and create videos. This makes it a
+                    <strong>multimodal</strong> technology capable of producing different types of content from a single
+                    idea or prompt.
+                </p>
+
+
+
+
+
+                <h3>How Generative AI Works</h3>
+
+                <div class="image-container">
+                    <img src="gen_ai_simple_workflow.png" alt="Generative AI Simple Workflow" id="flow-image"
+                        style="max-width: 500px; border: none;">
+                    <p class="image-caption">Fig 2.0: From Prompt to Creation: How Generative AI Works</p>
+                </div>
+
+                <h3>Gemini Example (Image Generation & Editing)</h3>
+                <p>
+                    Gemini demonstrates how generative AI can both create and modify images based on a prompt.
+                </p>
+
+                <h3>Example 1: Text-to-Image Generation</h3>
+                <div class="image-container">
+                    <img src="gemini_text_to_image_generation.png" alt="Gemini text-to-image generation example"
+                        id="gemini-gen-image">
+                    <p class="image-caption">Fig 3.0: Gemini generating an image from a prompt.</p>
+                </div>
+
+                <h3>Example 2: Image Editing</h3>
+                <div class="image-container">
+                    <img src="gemini_image_editing.png" alt="Gemini image editing example" id="gemini-edit-image">
+                    <p class="image-caption">Fig 3.1: Gemini modifying an uploaded image.</p>
+                </div>
+
+
+                <h3>Why Do We Use It?</h3>
+                <p>
+                    Generative AI is used because it enables creation, simulation, and automation at scale.
+                </p>
+
+                <p><strong>Creativity:</strong> Helps generate ideas, designs, and artistic content.</p>
+                <p><strong>Data Generation:</strong> Creates synthetic datasets for training AI systems.</p>
+                <p><strong>Gaming and Film:</strong> Used to design characters, environments, and visual effects, while
+                    reducing both production time and costs.</p>
+                <p><strong>Content Creation & Advertising:</strong> Generative AI tools like Gemini can generate and
+                    personalize content, making it easier to create articles, ads, and marketing materials.</p>
+
+                <h2>3. The Three Famous Types of AI Creators</h2>
+
+                <h3>GAN (The Artist and the Inspector)</h3>
+                <div class="image-container">
+                    <img src="gan_analogy.png" alt="GAN Analogy" id="gan-analogy">
+                    <p class="image-caption">Fig 4.0: The Conceptual Analogy (Artist vs. Inspector).</p>
+                </div>
+
+                <h4>How it works</h4>
+                <p>
+                    A GAN is made of two parts: a <strong>Generator (Artist)</strong> which creates fake images, and a
+                    <strong>Discriminator (Inspector)</strong> which detects them. They compete against each other until
+                    the generator becomes extremely realistic.
+                </p>
+
+                <div class="image-container">
+                    <img src="GAN.png" alt="GAN Workflow" id="gan-workflow">
+                    <p class="image-caption">Fig 4.1: The Technical GAN Workflow.</p>
+                </div>
+
+                <div class="pro-con-grid">
+                    <div class="pro-box">
+                        <strong>Advantages</strong>
+                        <ul>
+                            <li>Produces extremely realistic outputs</li>
+                            <li>Very fast generation after training</li>
+                        </ul>
+                    </div>
+                    <div class="con-box">
+                        <strong>Limitations</strong>
+                        <ul>
+                            <li>Hard to train because it has two models (Generator and Discriminator) that must learn
+                                together, and if one learns too fast, it affects the other.
+                            </li>
+                            <li>Can become unstable because the training can go up and down instead of improving step by
+                                step</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>VAE (The Smart Compressor)</h3>
+                <div class="image-container">
+                    <img src="vae_analogy.png" alt="VAE Analogy" id="vae-analogy">
+                    <p class="image-caption">Fig 5.0: The Conceptual Analogy (The Secret Code).</p>
+                </div>
+
+                <h4>How it works</h4>
+                <p>
+                    A VAE compresses an image into a small representation called latent space, then reconstructs it. It
+                    works through encoding (compression) and decoding (reconstruction).
+                </p>
+
+                <div class="image-container">
+                    <img src="VAE.png" alt="VAE Workflow" id="vae-workflow">
+                    <p class="image-caption">Fig 5.1: The Technical VAE Workflow.</p>
+                </div>
+
+                <div class="pro-con-grid">
+                    <div class="pro-box">
+                        <strong>Advantages</strong>
+                        <ul>
+                            <li>Very stable training process</li>
+                            <li>Excellent at capturing structure</li>
+                        </ul>
+                    </div>
+                    <div class="con-box">
+                        <strong>Limitations</strong>
+                        <ul>
+                            <li>Images often look slightly blurry</li>
+                            <li>Less detail than GAN or Diffusion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Diffusion Models (The Fog Cleaner) </h3>
+                <div class="image-container">
+                    <img src="diffusion_analogy.png" alt="Diffusion Analogy" id="diffusion-analogy">
+                    <p class="image-caption">Fig 6.0: The Conceptual Analogy (The Fog Cleaner).</p>
+                </div>
+
+                <h4>How it works</h4>
+                <p>
+                    Diffusion models start with random noise and gradually refine it until a clear image appears. It is
+                    like the AI is "finding" the picture hidden inside the mess!
+                </p>
+
+                <div class="image-container">
+                    <img src="diffusion.png" alt="Diffusion Workflow" id="diffusion-workflow">
+                    <p class="image-caption">Fig 6.1: Diffusion models Workflow.</p>
+                </div>
+
+                <div class="pro-con-grid">
+                    <div class="pro-box">
+                        <strong>Advantages</strong>
+                        <ul>
+                            <li>Highest visual quality available </li>
+                            <li>Highly creative and detailed outputs</li>
+                        </ul>
+                    </div>
+                    <div class="con-box">
+                        <strong>Limitations</strong>
+                        <ul>
+                            <li>Extremely slow to generate images</li>
+                            <li>Requires high computational cost</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Comparison Summary</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Idea</th>
+                                <th>Advantages</th>
+                                <th>Limitations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="model-name">GAN</td>
+                                <td>Competition between generator and discriminator</td>
+                                <td>Produces highly realistic images with fast generation after training
+
+                                </td>
+                                <td>Difficult to train and can suffer from instability during learning
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="model-name">VAE</td>
+                                <td>Encodes images into a compressed representation and reconstructs them
+
+                                </td>
+                                <td>Stable training process and simple architecture
+
+                                </td>
+                                <td>Generated images are often less sharp and may appear blurry
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="model-name">Diffusion</td>
+                                <td>Gradually removes noise step by step to form an image
+
+                                </td>
+                                <td>Produces very high-quality and detailed images with strong stability
+
+                                </td>
+                                <td>Requires many iterative steps, making generation slow and computationally expensive
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Final Thought</h3>
+                <p>
+                    Generative AI represents a shift in artificial intelligence. From systems that only analyze the
+                    world, we are moving toward systems that can create entirely new worlds.
+                </p>
+                <p>
+                    This includes images, text, audio, and video all generated from simple human ideas.
+                </p>
+            </article>
+            </article>
+
+            <footer
+                style="margin-top: 100px; padding: 60px 0; border-top: 2px solid var(--border-color); text-align: center;">
+                <p
+                    style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">
+                    Assia's Blog</p>
+                <p
+                    style="font-family: 'Montserrat', sans-serif; font-size: 0.8rem; color: var(--muted-color); margin-bottom: 25px;">
+                    Written by Assia BENDAOU</p>
+
+                <div class="footer-links">
+                    <a href="https://github.com/ASSIABD/" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/assia-bendaou/" target="_blank">LinkedIn</a>
+                </div>
+
+                <p style="margin-top: 40px; font-family: 'Montserrat', sans-serif; font-size: 0.6rem; opacity: 0.4;">
+                    &copy; 2026 • All Rights Reserved</p>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
